@@ -10,23 +10,23 @@ import { OrganicFarmRoutingModule } from './organic-farm-routing.module';
 import { HomeComponent } from './pages/home/home.component';
 
 // Components
-import { BannerComponent } from './components/banner/banner.component';
 import { CategoriesComponent } from './components/categories/categories.component';
 import { ProductsComponent } from './components/products/products.component';
+import { BannerComponent } from './components/banner/banner.component';
 
 const components = [
-  BannerComponent,
   ProductsComponent,
-  CategoriesComponent
+  CategoriesComponent,
+  HomeComponent,
+  BannerComponent
 ]
 
 @NgModule({
-  declarations: [
-    HomeComponent 
-  ],
+  declarations: [...components],
   imports: [
     CommonModule,
     OrganicFarmRoutingModule
-  ]
+  ],
+  exports: [...components]
 })
 export class OrganicFarmModule { }

@@ -1,1 +1,34 @@
-<p>home works!</p>
+<app-banner></app-banner>
+
+<main>
+
+    <div class="container">
+
+        <section>
+            <h3 class="text-center mt-5">Categories</h3>
+            <organic-farm-categories></organic-farm-categories>
+        </section>
+
+        <section>
+            <h3 class="text-center mt-4 pt-5">Bestsellers</h3>
+            <organic-farm-products [productType]="'most-seller'"></organic-farm-products>
+        </section>
+
+        <section>
+            <h3 class="text-center mt-4 pt-5">New products</h3>
+            <organic-farm-products [productType]="'new'"></organic-farm-products>
+        </section>
+
+        <section>
+            <div class="row d-flex justify-content-center text-center mt-3 mt-md-5 mb-4 pt-5">
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-3 pb-1 pb-md-0" *ngFor="let section of sections">
+                    <i [class]="section.icon"></i>
+                    <h5>{{section.title}}</h5>
+                    <h5>{{section.description}}</h5>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+</main>
