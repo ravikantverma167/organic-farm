@@ -11,7 +11,9 @@ export class Product {
     price: {
         value: number;
         currency: string;
-    }
+    };
+    category?: string;
+    description?: string;
 
     constructor(obj?: any) {
         obj = obj || {};
@@ -20,5 +22,9 @@ export class Product {
         this.name = obj.name;
         this.dimension = obj.dimension;
         this.price = obj.price;
+        if(obj.category){
+            this.category = obj.category;
+        }
+        this.description = obj.description;
     }
 }

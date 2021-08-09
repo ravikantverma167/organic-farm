@@ -1,15 +1,13 @@
 
- export class Category {
+export class Category {
 
-    pic: {
-        url: string;
-    };
+    pic_url: string;
     name: string;
 
     constructor(obj?: any) {
         obj = obj || {};
 
-        this.pic = obj.pic;
+        this.pic_url = obj.pic_url;
         this.name = obj.name;
     }
 }
