@@ -1,1 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+.primary{
+    color:#82B440
+}
+
+.skin-light .btn-primary,
+.primary-background{
+    background-color:#82B440 !important
+}

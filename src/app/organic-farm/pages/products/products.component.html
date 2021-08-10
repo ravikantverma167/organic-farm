@@ -1,93 +1,52 @@
-<main>
+<main class="main-container">
 
     <div class="container">
 
         <div class="row">
             <div class="col-lg-4 mt-3 mb-4">
 
-                <!-- Section: Categories -->
                 <section>
-
                     <h5 class="mb-3">Categories</h5>
 
                     <div class="text-muted small text-uppercase mb-5">
-
-                        <p class="mb-3"><a href="#!" class="card-link-secondary">Vegetables</a></p>
-                        <p class="mb-3"><a href="#!" class="card-link-secondary">Fruits</a></p>
-                        <p class="mb-3"><a href="#!" class="card-link-secondary">Herbs</a></p>
-                        <p class="mb-3"><a href="#!" class="card-link-secondary">Bread</a></p>
-                        <p class="mb-3"><a href="#!" class="card-link-secondary">Pasta</a></p>
-                        <p class="mb-3"><a href="#!" class="card-link-secondary">Buts</a></p>
-                        <p class="mb-3"><a href="#!" class="card-link-secondary">Legumes</a></p>
-                        <p class="mb-3"><a href="#!" class="card-link-secondary">Spices</a></p>
-                        <p class="mb-3"><a href="#!" class="card-link-secondary">Coffee</a></p>
-                        <p class="mb-3"><a href="#!" class="card-link-secondary">Active</a></p>
-                        <p class="mb-3"><a href="#!" class="card-link-secondary">Tea</a></p>
-                        <p class="mb-3"><a href="#!" class="card-link-secondary">Dry fruits</a></p>
-
+                        <p class="mb-3" *ngFor="let category of categories">
+                            <a href="#!" class="card-link-secondary">{{category.name}}</a>
+                        </p>
                     </div>
-
                 </section>
-                <!-- Section: Categories -->
 
                 <!-- Section: Filters -->
                 <section>
-
                     <h5 class="mb-4">Filters</h5>
 
                     <section class="mb-4">
-
                         <div class="md-form md-outline mt-0 d-flex justify-content-between align-items-center">
                             <input type="text" id="search12" class="form-control mb-0" placeholder="Search...">
                             <a href="#!" class="btn btn-flat btn-md px-3 waves-effect"><i
                                     class="fas fa-search fa-lg"></i></a>
                         </div>
-
                     </section>
 
                     <!-- Section: Average -->
                     <section class="mb-4">
-
                         <h6 class="font-weight-bold mb-3">Avg. Customer Review</h6>
 
                         <a href="#!">
                             <ul class="rating">
                                 <li>
-                                    <i class="fas fa-star fa-sm text-primary"></i>
+                                    <i class="fas fa-star fa-sm primary"></i>
                                 </li>
                                 <li>
-                                    <i class="fas fa-star fa-sm text-primary"></i>
+                                    <i class="fas fa-star fa-sm primary"></i>
                                 </li>
                                 <li>
-                                    <i class="fas fa-star fa-sm text-primary"></i>
+                                    <i class="fas fa-star fa-sm primary"></i>
                                 </li>
                                 <li>
-                                    <i class="fas fa-star fa-sm text-primary"></i>
+                                    <i class="fas fa-star fa-sm primary"></i>
                                 </li>
                                 <li>
-                                    <i class="far fa-star fa-sm text-primary"></i>
-                                </li>
-                                <li>
-                                    <p class="small text-uppercase card-link-secondary px-2">& Up</p>
-                                </li>
-                            </ul>
-                        </a>
-                        <a href="#!">
-                            <ul class="rating">
-                                <li>
-                                    <i class="fas fa-star fa-sm text-primary"></i>
-                                </li>
-                                <li>
-                                    <i class="fas fa-star fa-sm text-primary"></i>
-                                </li>
-                                <li>
-                                    <i class="fas fa-star fa-sm text-primary"></i>
-                                </li>
-                                <li>
-                                    <i class="far fa-star fa-sm text-primary"></i>
-                                </li>
-                                <li>
-                                    <i class="far fa-star fa-sm text-primary"></i>
+                                    <i class="far fa-star fa-sm primary"></i>
                                 </li>
                                 <li>
                                     <p class="small text-uppercase card-link-secondary px-2">& Up</p>
@@ -97,19 +56,19 @@
                         <a href="#!">
                             <ul class="rating">
                                 <li>
-                                    <i class="fas fa-star fa-sm text-primary"></i>
+                                    <i class="fas fa-star fa-sm primary"></i>
                                 </li>
                                 <li>
-                                    <i class="fas fa-star fa-sm text-primary"></i>
+                                    <i class="fas fa-star fa-sm primary"></i>
                                 </li>
                                 <li>
-                                    <i class="far fa-star fa-sm text-primary"></i>
+                                    <i class="fas fa-star fa-sm primary"></i>
                                 </li>
                                 <li>
-                                    <i class="far fa-star fa-sm text-primary"></i>
+                                    <i class="far fa-star fa-sm primary"></i>
                                 </li>
                                 <li>
-                                    <i class="far fa-star fa-sm text-primary"></i>
+                                    <i class="far fa-star fa-sm primary"></i>
                                 </li>
                                 <li>
                                     <p class="small text-uppercase card-link-secondary px-2">& Up</p>
@@ -119,26 +78,47 @@
                         <a href="#!">
                             <ul class="rating">
                                 <li>
-                                    <i class="fas fa-star fa-sm text-primary"></i>
+                                    <i class="fas fa-star fa-sm primary"></i>
                                 </li>
                                 <li>
-                                    <i class="far fa-star fa-sm text-primary"></i>
+                                    <i class="fas fa-star fa-sm primary"></i>
                                 </li>
                                 <li>
-                                    <i class="far fa-star fa-sm text-primary"></i>
+                                    <i class="far fa-star fa-sm primary"></i>
                                 </li>
                                 <li>
-                                    <i class="far fa-star fa-sm text-primary"></i>
+                                    <i class="far fa-star fa-sm primary"></i>
                                 </li>
                                 <li>
-                                    <i class="far fa-star fa-sm text-primary"></i>
+                                    <i class="far fa-star fa-sm primary"></i>
                                 </li>
                                 <li>
                                     <p class="small text-uppercase card-link-secondary px-2">& Up</p>
                                 </li>
                             </ul>
                         </a>
-
+                        <a href="#!">
+                            <ul class="rating">
+                                <li>
+                                    <i class="fas fa-star fa-sm primary"></i>
+                                </li>
+                                <li>
+                                    <i class="far fa-star fa-sm primary"></i>
+                                </li>
+                                <li>
+                                    <i class="far fa-star fa-sm primary"></i>
+                                </li>
+                                <li>
+                                    <i class="far fa-star fa-sm primary"></i>
+                                </li>
+                                <li>
+                                    <i class="far fa-star fa-sm primary"></i>
+                                </li>
+                                <li>
+                                    <p class="small text-uppercase card-link-secondary px-2">& Up</p>
+                                </li>
+                            </ul>
+                        </a>
                     </section>
                     <!-- Section: Average -->
 
@@ -236,413 +216,34 @@
                 </section>
                 <!-- Section: Block Content -->
 
-                <!--Section: Block Content-->
                 <section>
-
-                    <!-- Grid row -->
                     <div class="row mb-4">
-                        <organic-farm-home-products [productType]="'most-seller'"></organic-farm-home-products>
-                        <!-- Grid column -->
-                        <div class="col-md-6 col-lg-4 mb-4">
 
+                        <div class="col-md-6 col-lg-4 mb-4" *ngFor="let product of products">
                             <!-- Card -->
                             <div class="">
-
                                 <div class="view zoom z-depth-2 rounded">
-                                    <img class="img-fluid w-100"
-                                        src="https://mdbootstrap.com/img/Photos/Horizontal/Eco/img(78).jpg"
-                                        alt="Sample">
-                                    <a href="#!">
+                                    <img class="img-fluid w-100" [src]="product.pic.url" alt="Sample">
+                                    <a [routerLink]="['/', 'products', product.name]">
                                         <div class="mask"></div>
                                     </a>
                                 </div>
 
                                 <div class="text-center pt-4">
-
-                                    <h5 class="mb-0">Organic Lobo apples</h5>
-                                    <h5>(1kg)</h5>
-                                    <h6 class="mb-3">$ 5.99</h6>
+                                    <h5 class="mb-0">{{product.name}}</h5>
+                                    <h5>({{product.dimension.value}} {{product.dimension.unit}})</h5>
+                                    <h6 class="mb-3">{{product.price.currency}} {{product.price.value}}</h6>
                                     <button type="button" class="btn btn-primary btn-sm mr-1"><i
                                             class="fas fa-cart-plus"></i></button>
                                     <button type="button" class="btn btn-light btn-sm"><i
                                             class="fas fa-info-circle pr-2"></i>Details</button>
-
                                 </div>
-
                             </div>
                             <!-- Card -->
-
                         </div>
-                        <!-- Grid column -->
-
-                        <!-- Grid column -->
-                        <div class="col-md-6 col-lg-4 mb-4">
-
-                            <!-- Card -->
-                            <div class="">
-
-                                <div class="view zoom z-depth-2 rounded">
-                                    <img class="img-fluid w-100"
-                                        src="https://mdbootstrap.com/img/Photos/Horizontal/Eco/img(79).jpg"
-                                        alt="Sample">
-                                    <a href="#!">
-                                        <div class="mask"></div>
-                                    </a>
-                                </div>
-
-                                <div class="text-center pt-4">
-
-                                    <h5 class="mb-0">Organic Mutsu apples</h5>
-                                    <h5>(1kg)</h5>
-                                    <h6 class="mb-3">$ 6.99</h6>
-                                    <button type="button" class="btn btn-primary btn-sm mr-1"><i
-                                            class="fas fa-cart-plus"></i></button>
-                                    <button type="button" class="btn btn-light btn-sm"><i
-                                            class="fas fa-info-circle pr-2"></i>Details</button>
-
-                                </div>
-
-                            </div>
-                            <!-- Card -->
-
-                        </div>
-                        <!-- Grid column -->
-
-                        <!-- Grid column -->
-                        <div class="col-md-6 col-lg-4 mb-4">
-
-                            <!-- Card -->
-                            <div class="">
-
-                                <div class="view zoom z-depth-2 rounded">
-                                    <img class="img-fluid w-100"
-                                        src="https://mdbootstrap.com/img/Photos/Horizontal/Eco/img(81).jpg"
-                                        alt="Sample">
-                                    <a href="#!">
-                                        <div class="mask"></div>
-                                    </a>
-                                </div>
-
-                                <div class="text-center pt-4">
-
-                                    <h5 class="mb-0">Organic Gloster apples</h5>
-                                    <h5>(1kg)</h5>
-                                    <h6 class="mb-3">$ 4.99</h6>
-                                    <button type="button" class="btn btn-primary btn-sm mr-1"><i
-                                            class="fas fa-cart-plus"></i></button>
-                                    <button type="button" class="btn btn-light btn-sm"><i
-                                            class="fas fa-info-circle pr-2"></i>Details</button>
-
-                                </div>
-
-                            </div>
-                            <!-- Card -->
-
-                        </div>
-                        <!-- Grid column -->
-
-                        <!-- Grid column -->
-                        <div class="col-md-6 col-lg-4 mb-4">
-
-                            <!-- Card -->
-                            <div class="">
-
-                                <div class="view zoom z-depth-2 rounded">
-                                    <img class="img-fluid w-100"
-                                        src="https://mdbootstrap.com/img/Photos/Horizontal/Eco/img(84).jpg"
-                                        alt="Sample">
-                                    <a href="#!">
-                                        <div class="mask"></div>
-                                    </a>
-                                </div>
-
-                                <div class="text-center pt-4">
-
-                                    <h5 class="mb-0">Organic strawberries</h5>
-                                    <h5>(500 g)</h5>
-                                    <h6 class="mb-3">$ 7.99</h6>
-                                    <button type="button" class="btn btn-primary btn-sm mr-1"><i
-                                            class="fas fa-cart-plus"></i></button>
-                                    <button type="button" class="btn btn-light btn-sm"><i
-                                            class="fas fa-info-circle pr-2"></i>Details</button>
-
-                                </div>
-
-                            </div>
-                            <!-- Card -->
-
-                        </div>
-                        <!-- Grid column -->
-
-                        <!-- Grid column -->
-                        <div class="col-md-6 col-lg-4 mb-4">
-
-                            <!-- Card -->
-                            <div class="">
-
-                                <div class="view zoom z-depth-2 rounded">
-                                    <img class="img-fluid w-100"
-                                        src="https://mdbootstrap.com/img/Photos/Horizontal/Eco/img(85).jpg"
-                                        alt="Sample">
-                                    <a href="#!">
-                                        <div class="mask"></div>
-                                    </a>
-                                </div>
-
-                                <div class="text-center pt-4">
-
-                                    <h5 class="mb-0">Organic raspberries</h5>
-                                    <h5>(500 g)</h5>
-                                    <h6 class="mb-3">$ 8.99</h6>
-                                    <button type="button" class="btn btn-primary btn-sm mr-1"><i
-                                            class="fas fa-cart-plus"></i></button>
-                                    <button type="button" class="btn btn-light btn-sm"><i
-                                            class="fas fa-info-circle pr-2"></i>Details</button>
-
-                                </div>
-
-                            </div>
-                            <!-- Card -->
-
-                        </div>
-                        <!-- Grid column -->
-
-                        <!-- Grid column -->
-                        <div class="col-md-6 col-lg-4 mb-4">
-
-                            <!-- Card -->
-                            <div class="">
-
-                                <div class="view zoom z-depth-2 rounded">
-                                    <img class="img-fluid w-100"
-                                        src="https://mdbootstrap.com/img/Photos/Horizontal/Eco/img(86).jpg"
-                                        alt="Sample">
-                                    <a href="#!">
-                                        <div class="mask"></div>
-                                    </a>
-                                </div>
-
-                                <div class="text-center pt-4">
-
-                                    <h5 class="mb-0">Organic blueberries</h5>
-                                    <h5>(500 g)</h5>
-                                    <h6 class="mb-3">$ 9.99</h6>
-                                    <button type="button" class="btn btn-primary btn-sm mr-1"><i
-                                            class="fas fa-cart-plus"></i></button>
-                                    <button type="button" class="btn btn-light btn-sm"><i
-                                            class="fas fa-info-circle pr-2"></i>Details</button>
-
-                                </div>
-
-                            </div>
-                            <!-- Card -->
-
-                        </div>
-                        <!-- Grid column -->
-
-                        <!-- Grid column -->
-                        <div class="col-md-6 col-lg-4 mb-4">
-
-                            <!-- Card -->
-                            <div class="">
-
-                                <div class="view zoom z-depth-2 rounded">
-                                    <img class="img-fluid w-100"
-                                        src="https://mdbootstrap.com/img/Photos/Horizontal/Eco/img(87).jpg"
-                                        alt="Sample">
-                                    <a href="#!">
-                                        <div class="mask"></div>
-                                    </a>
-                                </div>
-
-                                <div class="text-center pt-4">
-
-                                    <h5 class="mb-0">Organic bananas</h5>
-                                    <h5>(1kg)</h5>
-                                    <h6 class="mb-3">$ 10.99</h6>
-                                    <button type="button" class="btn btn-primary btn-sm mr-1"><i
-                                            class="fas fa-cart-plus"></i></button>
-                                    <button type="button" class="btn btn-light btn-sm"><i
-                                            class="fas fa-info-circle pr-2"></i>Details</button>
-
-                                </div>
-
-                            </div>
-                            <!-- Card -->
-
-                        </div>
-                        <!-- Grid column -->
-
-                        <!-- Grid column -->
-                        <div class="col-md-6 col-lg-4 mb-4">
-
-                            <!-- Card -->
-                            <div class="">
-
-                                <div class="view zoom z-depth-2 rounded">
-                                    <img class="img-fluid w-100"
-                                        src="https://mdbootstrap.com/img/Photos/Horizontal/Eco/img(88).jpg"
-                                        alt="Sample">
-                                    <a href="#!">
-                                        <div class="mask"></div>
-                                    </a>
-                                </div>
-
-                                <div class="text-center pt-4">
-
-                                    <h5 class="mb-0">Organic melon</h5>
-                                    <h5>(1kg)</h5>
-                                    <h6 class="mb-3">$ 9.99</h6>
-                                    <button type="button" class="btn btn-primary btn-sm mr-1"><i
-                                            class="fas fa-cart-plus"></i></button>
-                                    <button type="button" class="btn btn-light btn-sm"><i
-                                            class="fas fa-info-circle pr-2"></i>Details</button>
-
-                                </div>
-
-                            </div>
-                            <!-- Card -->
-
-                        </div>
-                        <!-- Grid column -->
-
-                        <!-- Grid column -->
-                        <div class="col-md-6 col-lg-4 mb-4">
-
-                            <!-- Card -->
-                            <div class="">
-
-                                <div class="view zoom z-depth-2 rounded">
-                                    <img class="img-fluid w-100"
-                                        src="https://mdbootstrap.com/img/Photos/Horizontal/Eco/img(89).jpg"
-                                        alt="Sample">
-                                    <a href="#!">
-                                        <div class="mask"></div>
-                                    </a>
-                                </div>
-
-                                <div class="text-center pt-4">
-
-                                    <h5 class="mb-0">Organic watermelon</h5>
-                                    <h5>(1kg)</h5>
-                                    <h6 class="mb-3">$ 8.99</h6>
-                                    <button type="button" class="btn btn-primary btn-sm mr-1"><i
-                                            class="fas fa-cart-plus"></i></button>
-                                    <button type="button" class="btn btn-light btn-sm"><i
-                                            class="fas fa-info-circle pr-2"></i>Details</button>
-
-                                </div>
-
-                            </div>
-                            <!-- Card -->
-
-                        </div>
-                        <!-- Grid column -->
-
-                        <!-- Grid column -->
-                        <div class="col-md-6 col-lg-4 mb-4">
-
-                            <!-- Card -->
-                            <div class="">
-
-                                <div class="view zoom z-depth-2 rounded">
-                                    <img class="img-fluid w-100"
-                                        src="https://mdbootstrap.com/img/Photos/Horizontal/Eco/img(90).jpg"
-                                        alt="Sample">
-                                    <a href="#!">
-                                        <div class="mask"></div>
-                                    </a>
-                                </div>
-
-                                <div class="text-center pt-4">
-
-                                    <h5 class="mb-0">Organic pears</h5>
-                                    <h5>(1kg)</h5>
-                                    <h6 class="mb-3">$ 6.99</h6>
-                                    <button type="button" class="btn btn-primary btn-sm mr-1"><i
-                                            class="fas fa-cart-plus"></i></button>
-                                    <button type="button" class="btn btn-light btn-sm"><i
-                                            class="fas fa-info-circle pr-2"></i>Details</button>
-
-                                </div>
-
-                            </div>
-                            <!-- Card -->
-
-                        </div>
-                        <!-- Grid column -->
-
-                        <!-- Grid column -->
-                        <div class="col-md-6 col-lg-4 mb-4">
-
-                            <!-- Card -->
-                            <div class="">
-
-                                <div class="view zoom z-depth-2 rounded">
-                                    <img class="img-fluid w-100"
-                                        src="https://mdbootstrap.com/img/Photos/Horizontal/Eco/img(91).jpg"
-                                        alt="Sample">
-                                    <a href="#!">
-                                        <div class="mask"></div>
-                                    </a>
-                                </div>
-
-                                <div class="text-center pt-4">
-
-                                    <h5 class="mb-0">Organic dark grapes</h5>
-                                    <h5>(1kg)</h5>
-                                    <h6 class="mb-3">$ 11.99</h6>
-                                    <button type="button" class="btn btn-primary btn-sm mr-1"><i
-                                            class="fas fa-cart-plus"></i></button>
-                                    <button type="button" class="btn btn-light btn-sm"><i
-                                            class="fas fa-info-circle pr-2"></i>Details</button>
-
-                                </div>
-
-                            </div>
-                            <!-- Card -->
-
-                        </div>
-                        <!-- Grid column -->
-
-                        <!-- Grid column -->
-                        <div class="col-md-6 col-lg-4 mb-4">
-
-                            <!-- Card -->
-                            <div class="">
-
-                                <div class="view zoom z-depth-2 rounded">
-                                    <img class="img-fluid w-100"
-                                        src="https://mdbootstrap.com/img/Photos/Horizontal/Eco/img(77).jpg"
-                                        alt="Sample">
-                                    <a href="#!">
-                                        <div class="mask"></div>
-                                    </a>
-                                </div>
-
-                                <div class="text-center pt-4">
-
-                                    <h5 class="mb-0">Organic green grapes</h5>
-                                    <h5>(1kg)</h5>
-                                    <h6 class="mb-3">$ 12.99</h6>
-                                    <button type="button" class="btn btn-primary btn-sm mr-1"><i
-                                            class="fas fa-cart-plus"></i></button>
-                                    <button type="button" class="btn btn-light btn-sm"><i
-                                            class="fas fa-info-circle pr-2"></i>Details</button>
-
-                                </div>
-
-                            </div>
-                            <!-- Card -->
-
-                        </div>
-                        <!-- Grid column -->
 
                     </div>
-                    <!-- Grid row -->
-
                 </section>
-                <!--Section: Block Content-->
 
             </div>
         </div>
