@@ -16,11 +16,11 @@ export class CategoriesComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.categories=[{
-      pic_url: 'https://mdbootstrap.com/img/Photos/Horizontal/Eco/img(24).jpg', 
-      name:'veg'
-    }]
-    // this.fetch();
+    // this.categories=[{
+    //   pic_url: 'https://mdbootstrap.com/img/Photos/Horizontal/Eco/img(24).jpg', 
+    //   name:'veg'
+    // }]
+    this.fetch();
   }
 
   fetch() {

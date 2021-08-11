@@ -15,10 +15,10 @@
                 <h5 class="mb-0">{{product.name}}</h5>
                 <h5>({{product?.dimension?.value}} {{product?.dimension?.unit}})</h5>
                 <h6 class="mb-3">{{product?.price?.currency}} {{product?.price?.value}}</h6>
-                <button type="button" class="btn btn-primary btn-sm mr-1 primary">
+                <button type="button" class="btn btn-primary btn-sm mr-1 primary" (click)="addToCart(product)">
                     <i class="fas fa-shopping-cart pr-2 "></i>Add to cart
                 </button>
-                <button type="button" class="btn btn-light btn-sm">
+                <button type="button" class="btn btn-light btn-sm" [routerLink]="['/', 'products', product.id]">
                     <i class="fas fa-info-circle pr-2"></i>Details
                 </button>
             </div>

@@ -1,15 +1,59 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Subscription } from 'rxjs';
+import { CartService } from 'src/app/services/cart/cart.service';
+import { UtilityService } from 'src/app/services/utility/utility.service';
 
 @Component({
   selector: 'app-cart',
   templateUrl: './cart.component.html',
   styleUrls: ['./cart.component.scss']
 })
-export class CartComponent implements OnInit {
+export class CartComponent implements OnInit, OnDestroy {
 
-  constructor() { }
+  totalPrice: number = 0;
+  cart: Array<any> = [];
+  utilitySubscription: Subscription;
+  
+  constructor(
+    private cartService: CartService,
+    private utilityService: UtilityService
+  ) { 
+    this.utilitySubscription = this.utilityService.getCart.subscribe(cart => {
+      if (cart) {
+        this.cart = cart;
+        this.getTotalPrice();
+      }
+    });
+  }
 
   ngOnInit(): void {
+
+  }
+
+  addQuantity(item: any): void {
+    this.cartService.addToCart(item);
+  }
+
+  minsQuantity(item: any): void {
+    this.cartService.removeFromCart(item, false);
+  }
+
+  removeItem(item: any): void { 
+    this.cartService.removeFromCart(item, true);
+  }
+
+  getTotalPrice(): number {
+   this.totalPrice = 0;
+
+   this.cart.forEach((item) => {
+    this.totalPrice += item.selectedQuantity * item.price.value;
+   });
+
+   return this.totalPrice;
+  }
+
+  ngOnDestroy(): void {
+    if (!!this.utilitySubscription) this.utilitySubscription.unsubscribe();
   }
 
 }

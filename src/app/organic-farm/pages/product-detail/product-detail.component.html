@@ -9,7 +9,7 @@
 
           <div class="view zoom z-depth-2 rounded">
             <img class="img-fluid w-100" [src]="product.pic.url" alt="Sample">
-            <a href="#!">
+            <a >
               <div class="mask"></div>
             </a>
           </div>
@@ -66,10 +66,10 @@
                 <tr>
                   <td class="pl-0">
                     <div class="def-number-input number-input safari_only mb-0">
-                      <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                      <button (click)="minsQuantity(product)"
                         class="minus"></button>
-                      <input class="quantity" min="0" name="quantity" value="1" type="number">
-                      <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                      <input class="quantity" min="0" name="quantity" [value]="product.selectedQuantity" type="number">
+                      <button (click)="addQuantity(product)"
                         class="plus"></button>
                     </div>
                   </td>
@@ -77,8 +77,8 @@
               </tbody>
             </table>
           </div>
-          <button type="button" class="btn btn-primary btn-md mr-1 mb-2">Buy now</button>
-          <button type="button" class="btn btn-light btn-md mr-1 mb-2"><i class="fas fa-shopping-cart pr-2"></i>Add to
+          <button type="button" class="btn btn-primary btn-md mr-1 mb-2" (click)="addToCart(product, true)">Buy now</button>
+          <button type="button" class="btn btn-light btn-md mr-1 mb-2" (click)="addToCart(product, true)"><i class="fas fa-shopping-cart pr-2"></i>Add to
             cart</button>
         </div>
       </div>

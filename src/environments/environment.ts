@@ -5,7 +5,7 @@
 export const environment = {
   production: false,
 
-  url: "https://9de9e61a4e56.ngrok.io/",
+  url: "http://127.0.0.1:8000/",
 };
 
 /*
