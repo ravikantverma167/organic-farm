@@ -1,9 +1,9 @@
 <!--Main layout-->
-<main>
+<main style="margin-top: 80px">
   <div class="container">
 
     <!--Section: Block Content-->
-    <section class="mt-5 mb-4">
+    <section *ngIf="cart.length" class="mt-15 mb-4">
 
       <!--Grid row-->
       <div class="row">
@@ -66,7 +66,7 @@
                 </div>
                 <hr class="mb-4">
               </ng-container>
-              <p class="text-primary mb-0"><i class="fas fa-info-circle mr-1"></i> Do not delay the purchase, adding
+              <p class="cart-info mb-0"><i class="fas fa-info-circle mr-1"></i> Do not delay the purchase, adding
                 items to your cart does not mean booking them.</p>
 
             </div>
@@ -79,7 +79,7 @@
 
               <h5 class="mb-4">Expected shipping delivery</h5>
 
-              <p class="mb-0"> Thu., 12.03. - Mon., 16.03.</p>
+              <p class="mb-0"> {{minTime | date: 'EEE' }}., {{minTime | date: 'hh:mm'}}. - {{maxTime | date: 'EEE'}}, {{maxTime | date: 'hh:mm'}}.</p>
             </div>
           </div>
           <!-- Card -->
@@ -175,6 +175,10 @@
 
     </section>
     <!--Section: Block Content-->
+
+    <section>
+      <img *ngIf="!cart.length" class="img-fluid w-100" [src]="'/assets/empty_cart1.png'" alt="Sample">
+    </section>
 
   </div>
 </main>

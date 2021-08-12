@@ -2,6 +2,7 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { CartService } from 'src/app/services/cart/cart.service';
 import { UtilityService } from 'src/app/services/utility/utility.service';
+import * as moment from 'moment';
 
 @Component({
   selector: 'app-cart',
@@ -9,6 +10,9 @@ import { UtilityService } from 'src/app/services/utility/utility.service';
   styleUrls: ['./cart.component.scss']
 })
 export class CartComponent implements OnInit, OnDestroy {
+
+  minTime: any = moment().add(1, 'day');
+  maxTime: any = moment().add(2, 'day');
 
   totalPrice: number = 0;
   cart: Array<any> = [];

@@ -11,3 +11,39 @@
 .skin-light .btn-primary:hover {
     background-color: #48740f !important;
 }
+
+
+.skin-light .btn-primary:not([disabled]):not(.disabled).active, .skin-light .btn-primary:not([disabled]):not(.disabled):active, .skin-light .show>.btn-primary.dropdown-toggle {
+    background-color: #82B440 !important;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: #82B440 !important;
+    border-color: #82B440 !important;
+}
+
+.pagination .page-item.active .page-link {
+    color: #fff;
+    background-color: #82B440 !important;
+}
+
+.skin-light .pills-primary .nav-link.active, .skin-light .pills-primary .show>.nav-link, .skin-light .tabs-primary {
+    background-color: #82B440 !important;
+}
+
+.skin-light .btn-outline-primary {
+    color: #82B440 !important;
+    background-color: transparent !important;
+    border: 2px solid #82B440 !important;
+}
+
+.skin-light .btn-outline-primary {
+    color: #82B440 !important;
+    background-color: transparent !important;
+    border: 2px solid #82B440 !important;
+}
+
+.skin-light .border-primary {
+    border-color: #82B440 !important;
+}
