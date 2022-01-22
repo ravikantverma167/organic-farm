@@ -7,13 +7,7 @@ export const environment = {
 
   url: "http://127.0.0.1:8000/",
   firebase: {
-    apiKey: "AIzaSyAR3Sb8osQuxaPGqUSb2fwrLuO7COm1Ey4",
-    authDomain: "organic-farm-976fe.firebaseapp.com",
-    projectId: "organic-farm-976fe",
-    storageBucket: "organic-farm-976fe.appspot.com",
-    messagingSenderId: "632351950962",
-    appId: "1:632351950962:web:7436f54aa33a23a82d9aeb",
-    measurementId: "G-TPGH995RWL"
+
   }
 };
 
