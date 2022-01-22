@@ -3,6 +3,7 @@ import { Subscription } from 'rxjs';
 import { CartService } from 'src/app/services/cart/cart.service';
 import { UtilityService } from 'src/app/services/utility/utility.service';
 import * as moment from 'moment';
+import { Router } from '@angular/router';
 declare const Razorpay: any;
 @Component({
   selector: 'app-cart',
@@ -19,6 +20,7 @@ export class CartComponent implements OnInit, OnDestroy {
   utilitySubscription: Subscription;
 
   constructor(
+    private router: Router,
     private cartService: CartService,
     private utilityService: UtilityService
   ) {
@@ -56,16 +58,16 @@ export class CartComponent implements OnInit, OnDestroy {
     return this.totalPrice;
   }
 
-  onPaymentSuccess(): void {
-
-  }
-
   onPay(): void {
+    var self = this;
 
     function responseHandler(response: any) {
       alert(response.razorpay_payment_id);
-      alert(response.razorpay_order_id);
-      alert(response.razorpay_signature)
+      self.utilityService.setCart([]);
+      self.router.navigate(['/']);
+      setTimeout(() => {
+        window.location.reload();
+      }, 100)
     }
 
     const options = {
