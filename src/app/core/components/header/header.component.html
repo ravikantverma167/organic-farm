@@ -132,6 +132,23 @@
                                         for="formLoginRegister-password-repeat">Repeat password</label>
                                 </div>
 
+                                <!-- Continue with Google -->
+                                <div class="formGroup">
+                                    <button type="button" class="btn googleBtn" (click)="authService.GoogleAuth()">
+                                        <i class="fab fa-google-plus-g"></i>
+                                        Continue with Google
+                                    </button>
+                                </div>
+
+                                <!-- Continue with Facebook -->
+                                <!-- <div class="formGroup">
+                                    <button type="button" class="btn facebookBtn" (click)="authService.FacebookAuth()">
+                                        <i class="fab fa-facebook"></i>
+                                        Continue with Facebook
+                                    </button>
+                                </div>
+                                 -->
+
                                 <div class="form-check mt-4 mb-3 pl-0 text-left">
                                     <input type="checkbox" class="form-check-input filled-in"
                                         id="formLoginRegister-newsletter" name="newsletter">
@@ -143,7 +160,9 @@
                                 <div class="text-center">
                                     <p class="small grey-text mb-4">Lorem ipsum dolor sit amet <a target="_blank"
                                             href="#!">Privacy Policy</a>.</p>
-                                    <button type="button" class="btn btn-primary my-2">Sign up</button>
+                                    <button type="button" class="btn btn-primary my-2"
+                                        (click)="authService.SignUp('ravikantverma167@gmail.com', '123456')">Sign
+                                        up</button>
                                 </div>
 
                             </form>
@@ -171,8 +190,7 @@
 
             <!-- Brand -->
             <a class="navbar-brand" href="/">
-                <strong><span class="primary">Organic</span><span>Farm</span><span
-                        class="primary">.</span></strong>
+                <strong><span class="primary">Organic</span><span>Farm</span><span class="primary">.</span></strong>
             </a>
 
             <!-- Collapse button -->
@@ -196,8 +214,7 @@
                         <a href="#!" class="nav-link waves-effect">Blog</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#!" data-toggle="modal" data-target="#modalContactForm"
-                            class="nav-link waves-effect">Contact
+                        <a href="/contact-us" class="nav-link waves-effect">Contact
                         </a>
                     </li>
                     <li class="nav-item">

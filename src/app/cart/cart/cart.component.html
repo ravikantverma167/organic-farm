@@ -41,11 +41,10 @@
                         </div>
                         <div>
                           <div class="def-number-input number-input safari_only mb-0 w-100">
-                            <button (click)="minsQuantity(item)"
-                              class="minus"></button>
-                            <input class="quantity" min="0" name="quantity" [value]="item?.selectedQuantity" type="number">
-                            <button (click)="addQuantity(item)"
-                              class="plus"></button>
+                            <button (click)="minsQuantity(item)" class="minus"></button>
+                            <input class="quantity" min="0" name="quantity" [value]="item?.selectedQuantity"
+                              type="number">
+                            <button (click)="addQuantity(item)" class="plus"></button>
                           </div>
                           <small id="passwordHelpBlock" class="form-text text-muted text-center">
                             (Note, 1 piece)
@@ -79,7 +78,8 @@
 
               <h5 class="mb-4">Expected shipping delivery</h5>
 
-              <p class="mb-0"> {{minTime | date: 'EEE' }}., {{minTime | date: 'hh:mm'}}. - {{maxTime | date: 'EEE'}}, {{maxTime | date: 'hh:mm'}}.</p>
+              <p class="mb-0"> {{minTime | date: 'EEE' }}., {{minTime | date: 'hh:mm'}}. - {{maxTime | date: 'EEE'}},
+                {{maxTime | date: 'hh:mm'}}.</p>
             </div>
           </div>
           <!-- Card -->
@@ -138,7 +138,7 @@
                 </li>
               </ul>
 
-              <button type="button" class="btn btn-primary btn-block waves-effect waves-light">go to
+              <button type="button" class="btn btn-primary btn-block waves-effect waves-light" (click)="onPay()">go to
                 checkout</button>
 
             </div>

@@ -18,6 +18,8 @@ import { BannerComponent } from './pages/home/components/banner/banner.component
 import { HomeCategoriesComponent } from './pages/home/components/home-categories/home-categories.component';
 import { HomeProductsComponent } from './pages/home/components/home-products/home-products.component';
 import { ProductDetailComponent } from './pages/product-detail/product-detail.component';
+import { ContactUsComponent } from './pages/contact-us/contact-us.component';
+import { FormsModule } from '@angular/forms';
 
 const components = [
   BannerComponent,
@@ -28,17 +30,19 @@ const components = [
 const pages = [
   HomeComponent,
   ProductsComponent,
-  CategoriesComponent
+  ProductDetailComponent,
+  CategoriesComponent,
+  ContactUsComponent
 ]
 
 @NgModule({
   declarations: [
     ...pages,
     ...components,
-    ProductDetailComponent
   ],
   imports: [
     CommonModule,
+    FormsModule,
     OrganicFarmRoutingModule
   ],
   exports: []
